@@ -18,8 +18,8 @@ function walkHome (dogName, dogBreed) {
   return `Walk home with ${dogName} the ${dogBreed}`
 }
 
-function exerciseDog (dogName, dogBreed) {
   const routine = [wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog];
+function exerciseDog (dogName, dogBreed) {
   for (let i = 0; i < routine.length; i++) {
    routine[i](dogName, dogBreed);
  }
