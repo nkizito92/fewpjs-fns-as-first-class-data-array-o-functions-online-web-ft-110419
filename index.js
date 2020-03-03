@@ -23,5 +23,5 @@ function exerciseDog (dogName, dogBreed) {
   for (let i = 0; i < routine.length; i++) {
    newArry.push(routine[i](dogName, dogBreed));
  }
-  return routine
+  return newArry;
 }
