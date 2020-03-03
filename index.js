@@ -1,7 +1,6 @@
 function wakeDog (dogName, dogBreed) {
    return `Wake ${dogName} the ${dogBreed}`
 }
-
 function leashDog (dogName, dogBreed) {
    return `Leash ${dogName} the ${dogBreed}`
 }
@@ -20,7 +19,9 @@ function walkHome (dogName, dogBreed) {
 
   const routine = [wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog];
 function exerciseDog (dogName, dogBreed) {
+  let newArry = [];
   for (let i = 0; i < routine.length; i++) {
-   routine[i](dogName, dogBreed);
+   newArry.push(routine[i](dogName, dogBreed));
  }
+  return newArry;
 }
